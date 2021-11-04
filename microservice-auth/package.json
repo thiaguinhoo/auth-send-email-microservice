@@ -1,0 +1,12 @@
+{
+  "name": "microservice-auth",
+  "version": "1.0.0",
+  "description": "Authenticate MicroService",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "keywords": ["node", "authenticate"],
+  "author": "thiaguinhoo <thiagoluizsog@gmail.com>",
+  "license": "ISC"
+}
