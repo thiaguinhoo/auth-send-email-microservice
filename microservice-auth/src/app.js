@@ -12,4 +12,8 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('tiny'))
 }
 
+app.get('/protected', async (req, res) => {
+  res.json({ message: 'Welcome to development world' })
+})
+
 module.exports = app
