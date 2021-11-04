@@ -4,9 +4,15 @@
   "description": "Authenticate MicroService",
   "main": "index.js",
   "scripts": {
-    
+    "start:development": "nodemon src/server.js"
   },
-  "keywords": ["node", "authenticate"],
+  "keywords": [
+    "node",
+    "authenticate"
+  ],
   "author": "thiaguinhoo <thiagoluizsog@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
 }
