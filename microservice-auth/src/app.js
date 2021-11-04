@@ -2,6 +2,8 @@ require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 
+const authenticateMiddleware = require('./middlewares/authenticate')
+
 const app = express()
 
 app.use(express.json())
@@ -12,7 +14,7 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('tiny'))
 }
 
-app.get('/protected', async (req, res) => {
+app.get('/protected', authenticateMiddleware, async (req, res) => {
   res.json({ message: 'Welcome to development world' })
 })
 
