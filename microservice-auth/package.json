@@ -4,7 +4,9 @@
   "description": "Authenticate MicroService",
   "main": "index.js",
   "scripts": {
-    "start:development": "nodemon src/server.js"
+    "start:development": "nodemon src/server.js",
+    "lint:check": "standard ./src/**/*.js",
+    "lint:fix": "standard --fix ./src/**/*.js"
   },
   "keywords": [
     "node",
@@ -13,6 +15,7 @@
   "author": "thiaguinhoo <thiagoluizsog@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.14"
+    "nodemon": "^2.0.14",
+    "standard": "^16.0.4"
   }
 }
